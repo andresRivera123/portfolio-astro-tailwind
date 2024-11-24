@@ -28,10 +28,11 @@ npm install @fontsource-variable/onest
 ```
 
 ## 🌐 Web resources
-[Tailwind components](https://flowbite.com/)<br/>
-[Tailwind background](https://bg.ibelick.com/)<br/>
-[List icons - Tabler](https://tabler.io/icons)<br/>
-[List icons - svgl ](https://svgl.app/)<br/>
+<a href="https://flowbite.com/" target="_blank">Tailwind components</a><br/>
+<a href="https://bg.ibelick.com/" target="_blank">Tailwind background</a><br/>
+<a href="https://tabler.io/icons" target="_blank">List icons - Tabler</a><br/>
+<a href="https://svgl.app/" target="_blank">List icons - svgl</a><br/>
+
 
 
 
