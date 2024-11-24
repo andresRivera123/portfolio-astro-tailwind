@@ -3,11 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import SocialPill from "../components/SocialPill.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import Experience from "../components/Experience.astro";
 import GithubIcon from "../icons/Github.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
 import EmailIcon from "../icons/Email.astro";
-import Experience from "../components/Experience.astro";
-import Briefcase from "../icons/Briefcase.astro";
+import BriefcaseIcon from "../icons/Briefcase.astro";
+import CodeIcon from "../icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -15,7 +17,7 @@ import Briefcase from "../icons/Briefcase.astro";
   description="Explora el portfolio de Andrés Rivera Valle, desarrollador y programador web con una sólida trayectoria en la creación de sitios web modernos, funcionales y adaptables. Con especialización en desarrollo frontend, Andrés proporciona soluciones personalizadas empleando tecnologías como HTML, CSS, JavaScript, React, entre otras. Visita su portfolio para descubrir proyectos reales y ver cómo puede convertir tus ideas en soluciones digitales innovadoras."
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-22">
+    <SectionContainer id="contacto" class="pt-44 pb-32">
       <img
         class="rounded-full size-16 mb-4"
         src="https://media.licdn.com/dms/image/v2/D4D03AQG0TS2_QbjhOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728321759087?e=1737590400&v=beta&t=g54p5qstrSByH6iul51vAWc5qVBtVdxUXaRuhp-yq9M"
@@ -52,10 +54,17 @@ import Briefcase from "../icons/Briefcase.astro";
     </SectionContainer>
     <SectionContainer id="experiencia">
       <h2 class="text-2xl font-semibold mb-6 flex gap-x-4 items-center">
-        <Briefcase class="size-6" />
+        <BriefcaseIcon class="size-6" />
         Experiencia laboral
       </h2>
       <Experience />
+    </SectionContainer>
+    <SectionContainer id="proyectos">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-4 items-center">
+        <CodeIcon class="size-6"/>
+        Proyectos
+      </h2>
+      <Projects/>
     </SectionContainer>
   </main>
 </Layout>
