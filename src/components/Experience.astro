@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Febrero 2024 - Actualmente",
+    title: "Maquetador web - Ádraba ",
+    description:
+      "Desarrollo y soporte de webs, maquetación de emails y actualización de contenido para pymes, comercios y pequeños proyectos. Enfocado en el marketing digital y en tratar con el cliente para crear soluciones creativas.",
+      link: "https://www.adraba.com/"
+  },
+  {
+    date: "Abril 2023 - Agosto 2023",
+    title: "Desarollador frontend en sistema de facturación electrónica - Corporación Wolf S.A.",
+    description: "Como proyecto final de tesis, realicé un sistema web de punto de venta que consume APIs para la generación de documentos. Fue desarrollado con ReactJS, typecript, tailwindCSS, MaterialUI. También implementé un CI/CD Continuous Integration y Delivery Pipeline para el despliegue en AWS.",
+    link: "https://repositorio.espe.edu.ec/handle/21000/37244"
+  }
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience}/>
+      </li>
+    ))
+  }
+</ol>
